@@ -1,0 +1,4 @@
+.DS_Store
+*.log
+.staticrypt.json
+encrypted/
