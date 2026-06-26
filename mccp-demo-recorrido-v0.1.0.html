@@ -1148,6 +1148,7 @@ body::before{
   window.MCCP={ count:TOTAL, go:function(i){stop();go(i);}, play:function(cb){ if(cur>=TOTAL-1) go(0); play(cb||null); }, pause:stop, reset:function(){stop();go(0);}, get index(){return cur;}, get playing(){return playing;} };
 
   render(true);
+  try{var _q=new URLSearchParams(location.search);if(_q.has("film")){var _s=document.getElementById("stepper");if(_s)_s.style.display="none";}if(_q.has("step"))go(parseInt(_q.get("step"),10)||0);}catch(e){}
 })();
 </script>
 </body>
